@@ -71,14 +71,14 @@ padding-bottom: 20px;
 }
 
 /*Large screen devices*/
-@media (min-width:992px){
+@media (min-width:1200px){
     .box-lg-4{
         width:32%;
         float: left;
         margin-left:1%;
     }   
 }
-@media (min-width:750px) and (max-width:991px){
+@media (min-width:750px) and (max-width:1199px){
     .box-md-6{
         width:48%;
         float: left;
