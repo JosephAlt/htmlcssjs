@@ -21,8 +21,9 @@ padding-bottom: 20px;
 }
 
 .boxes{
-    position: relative;
-    margin:20px;
+    width: 98%;
+    margin-left:1%;
+    margin-bottom: 1%;
     background-color: #C0D8C0;
     border: 4px solid rgb(0, 0, 0);
 }
@@ -66,4 +67,26 @@ padding-bottom: 20px;
 
 .p-holder-div{
     clear: both;
+    padding:20px;
+}
+
+/*Large screen devices*/
+@media (min-width:992px){
+    .box-lg-4{
+        width:32%;
+        float: left;
+        margin-left:1%;
+    }   
+}
+@media (min-width:750px) and (max-width:991px){
+    .box-md-6{
+        width:48%;
+        float: left;
+        margin-left:1%;   
+    }
+    .box-md-12{
+        width:98%;
+        float: left;
+        margin-left:1%;  
+    }   
 }
