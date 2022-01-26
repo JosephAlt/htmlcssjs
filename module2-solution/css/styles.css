@@ -80,13 +80,19 @@ padding-bottom: 20px;
 }
 @media (min-width:750px) and (max-width:1199px){
     .box-md-6{
-        width:48%;
+        width:47%;
         float: left;
-        margin-left:1%;   
+        margin-left:2%;   
     }
     .box-md-12{
-        width:98%;
+        width:96%;
         float: left;
-        margin-left:1%;  
+        margin-left:2%; 
+        margin-bottom: 1%;
     }   
+}
+@media (max-width:749px){
+    .boxes{
+        margin-bottom:2%
+    }  
 }
