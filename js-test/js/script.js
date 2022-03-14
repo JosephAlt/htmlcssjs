@@ -1,78 +1,163 @@
-var message ="in global";
-console.log("global:mesage = " + message)
+// var message ="in global";
+// console.log("global:mesage = " + message)
 
-function a (){
-    var message = "inside a";
-    console.log("a: message = " + message);
-    b();
-}
-function b (){
-    console.log("b: message = " + message);
-}
-a();
+// function a (){
+//     var message = "inside a";
+//     console.log("a: message = " + message);
+//     b();
+// }
+// function b (){
+//     console.log("b: message = " + message);
+// }
+// a();
 
-//data types
-var boolval=true;
-var nullval=null;
-var undefinedval;
-var numval= 8;
-var stringval= "noice";
-console.log(boolval);
-console.log(nullval);
-console.log(undefinedval);
-console.log(stringval);
-console.log(numval);
+// //data types
+// var boolval=true;
+// var nullval=null;
+// var undefinedval;
+// var numval= 8;
+// var stringval= "noice";
+// console.log(boolval);
+// console.log(nullval);
+// console.log(undefinedval);
+// console.log(stringval);
+// console.log(numval);
 
-//test
-var test1;
-test1=5;
-if (test1==undefined){
-    console.log("x is undefined");
-}
-
-
-else{
-    console.log("x is defiend");
-}
-
-/////
+// //test
+// var test1;
+// test1=5;
+// if (test1==undefined){
+//     console.log("x is undefined");
+// }
 
 
-var string="Hello";
-string += " World";
-console.log(string +"!");
+// else{
+//     console.log("x is defiend");
+// }
 
-///math ops
-
-//precedence of parnathesis
-
-console.log((5/2)*5/2);
-console.log(undefined/2);
+// /////
 
 
-function test11(a){
-    console.log(a/5);
-}
-test11();
-test11(6238756);
+// var string="Hello";
+// string += " World";
+// console.log(string +"!");
 
-//equality
+// ///math ops
 
-var x=4, y=4;
-if (x == y) {
-    console.log("equal without quotes")
-}
-y="4"//string
-if (x==y){
-    console.log(" equal even when one with quotes ");
-}
+// //precedence of parnathesis
+
+// console.log((5/2)*5/2);
+// console.log(undefined/2);
 
 
-//strict equality
-console.log("strict equality");
-if (x===y){
-    console.log("sttict: x=4 is equal to y= string(4)")
-}
-else{
-    console.log("strict: x=4 is not equal to y=(string)4")
-}
+// function test11(a){
+//     console.log(a/5);
+// }
+// test11();
+// test11(6238756);
+
+// //equality
+
+// var x=4, y=4;
+// if (x == y) {
+//     console.log("equal without quotes")
+// }
+// y="4"//string
+// if (x==y){
+//     console.log(" equal even when one with quotes ");
+// }
+
+
+// //strict equality
+// console.log("strict equality");
+// if (x===y){
+//     console.log("sttict: x=4 is equal to y= string(4)")
+// }
+// else{
+//     console.log("strict: x=4 is not equal to y=(string)4")
+// }
+
+// if (false || null || "" || 0 || NaN ||undefined) {
+//     //this wont execute because js considers all the above as a false value
+//     console.log("this wont execute")
+// }
+// else{
+//     console.log("above given if statement regarding what js considers true did not work")
+// }
+
+
+// if (true && "noice" && "false" && 1 && -1){
+//     console.log("all conditions are ture so u see this")
+// }
+
+
+// //difference betweeen new line and the same line
+
+// function trialfunction1()
+// {
+//      return
+//      {
+//          name:"Jospeh"
+//      }
+// }
+
+// function trialfunction2(){
+//     return{
+//         name:"also Joseph"
+//     }
+// }
+// console.log(trialfunction1);
+// console.log(trialfunction2);
+
+// //for loop
+// var sum=0;
+// for (var i=0; i<10; i++){
+//     console.log(i);
+//     sum=sum+i;
+// }
+// console.log("the sum of the nuber sform 0 to 9 is" + sum);
+
+
+// for (i=0;i<5;i++){
+//     console.log("random line "+ i)
+// }
+
+// //fuction default value handling
+// function orderChickenWith(sidedish){
+//     // if (sidedish === undefined){
+//     //     sidedish="nothing";
+//     // }
+//     //insteed,
+//     sidedish=sidedish || "Nothing"
+//     console.log("Chicken with " + sidedish);
+// }
+
+// orderChickenWith("noodles");
+// orderChickenWith();
+
+// //assignment
+// // var x = 10;
+// // if ( (null) || (console.log("Hello")) || x > 5 ) {
+// //   console.log("Hello");
+// // }
+
+
+///OBJECTS
+
+var company= new Object();
+company.name="facebook";
+console.log(company);
+console.log(company.name);
+company.ceo=new Object();
+company.ceo.firstname="Mark";
+console.log(company.ceo.firstname);
+
+console.log(company);
+company.ceo.favColor="blue";
+console.log("CEO " + company.ceo.firstname + "'s Favourite Color is " + company.ceo.favColor);
+
+console.log(company["ceo"]["firstname"]);
+
+company["stock price"] = 190;
+console.log(company);
+console.log(company["stock price"]);
