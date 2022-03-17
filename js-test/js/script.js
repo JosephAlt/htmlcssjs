@@ -177,28 +177,80 @@
 
 //FUNCTIONS
 
-function multiply(x,y){
-    return x*y;
-};
+// function multiply(x,y){
+//     return x*y;
+// };
 
-multiply.version="v1.0.0";
-console.log(multiply.version);
+// multiply.version="v1.0.0";
+// console.log(multiply.version);
 
-//trial functions
-var multiplierfunc=function(multiplier){
-    var myfunction =function(x) {
-        return multiplier*x 
-    }
-    return myfunction;
-};
+// //trial functions
+// var multiplierfunc=function(multiplier){
+//     var myfunction =function(x) {
+//         return multiplier*x 
+//     }
+//     return myfunction;
+// };
 
-var multiplyby3= multiplierfunc(3);
-console.log(multiplyby3(10));
-console.log(multiplierfunc(3)(10000));
+// var multiplyby3= multiplierfunc(3);
+// console.log(multiplyby3(10));
+// console.log(multiplierfunc(3)(10000));
 
-//passing fucntoins as argunments
+// //passing fucntoins as argunments
 
-function doOperationOn(x,operation){
-    return operation(x);
-};
-console.log(doOperationOn(3,multiplyby3))
+// function doOperationOn(x,operation){
+//     return operation(x);
+// };
+// console.log(doOperationOn(3,multiplyby3))
+
+
+// var a=90;
+// var b=a;
+// var a=95;
+// console.log("a"+a);
+// console.log("b"+ b);
+
+// var aobj={
+//     a:99
+// }
+// var bobj=aobj;
+// bobj.a=100;
+// console.log(aobj.a);
+// console.log(bobj.a);
+
+
+//passing by reference and value in fucntions
+
+// function changePrimitive(primval){
+//     console.log("change in primitive|||||");
+//     console.log("before");
+//     console.log(primval);
+
+//     primval=5;
+//     console.log("after");
+//     console.log(primval);
+// };
+
+// console.log("BEFORE EXECUTION");
+// var value=7;
+// changePrimitive(value);
+// console.log("AFTER FUNCTION EXECUTON");
+// console.log("value variable after change in fucntoin");
+// console.log(value);
+
+console.log("INIT");
+function changeObject(objVal){
+    console.log("Before Change IN fucntion");
+    console.log(objVal);
+    objVal.x=5;
+    console.log("After change IN fucntion");
+    console.log(objVal);
+}
+
+console.log("Before Calling function");
+var value={
+    x:7
+}
+changeObject(value);
+console.log("After calling Function")
+console.log(value);
