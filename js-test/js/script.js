@@ -195,3 +195,10 @@ var multiplierfunc=function(multiplier){
 var multiplyby3= multiplierfunc(3);
 console.log(multiplyby3(10));
 console.log(multiplierfunc(3)(10000));
+
+//passing fucntoins as argunments
+
+function doOperationOn(x,operation){
+    return operation(x);
+};
+console.log(doOperationOn(3,multiplyby3))
