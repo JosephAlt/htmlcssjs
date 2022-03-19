@@ -258,20 +258,40 @@
 
 //function constructos
 
-function Circle(radius){    //useing capitals for others to knoiw that it is a fucntion construction( generally);
-    // console.log(this);
-    this.radius= radius; //radius part of the fucntion argument
+// function Circle(radius){    //useing capitals for others to knoiw that it is a fucntion construction( generally);
+//     // console.log(this);
+//     this.radius= radius; //radius part of the fucntion argument
 
-};
+// };
 
-Circle.prototype.getArea= function(){
-    return( Math.PI * Math.pow(this.radius,2))
+// Circle.prototype.getArea= function(){
+//     return( Math.PI * Math.pow(this.radius,2))
     
+// };
+
+// var myCircle = new Circle(10);  //New object named circle   
+// console.log(myCircle.getArea());
+
+
+// var otherCircle = new Circle(200);
+// console.log(otherCircle.getArea());
+
+
+
+//making my own fucntoin constructor
+
+function Cuboid(length,breadth,height){
+    // console.log(this);
+    this.length=length;
+    this.breadth=breadth;
+    this.height=height;
+
+    console.log(this.volume())
+};
+Cuboid.prototype.volume = function(){
+    return  this.length*this.breadth*this.height + " Cm^3"
 };
 
-var myCircle = new Circle(10);  //New object named circle   
-console.log(myCircle.getArea());
+cuboid1 =  new Cuboid(100,100,100);
 
-
-var otherCircle = new Circle(200);
-console.log(otherCircle.getArea());
+cuboid2 =  new Cuboid(10900,100,100);
