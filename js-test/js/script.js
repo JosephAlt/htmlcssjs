@@ -303,7 +303,12 @@
 
 function Number(integer){
     this.integer=integer;
+    console.log(this.isprime());
 }
 Number.prototype.isprime =  function(){
-    
+    n=this.integer;
+    for (t=0;t<n;t++){
+
+
+    }
 }
