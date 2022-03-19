@@ -238,19 +238,40 @@
 // console.log("value variable after change in fucntoin");
 // console.log(value);
 
-console.log("INIT");
-function changeObject(objVal){
-    console.log("Before Change IN fucntion");
-    console.log(objVal);
-    objVal.x=5;
-    console.log("After change IN fucntion");
-    console.log(objVal);
-}
+// console.log("INIT");
+// function changeObject(objVal){
+//     console.log("Before Change IN fucntion");
+//     console.log(objVal);
+//     objVal.x=5;
+//     console.log("After change IN fucntion");
+//     console.log(objVal);
+// }
 
-console.log("Before Calling function");
-var value={
-    x:7
-}
-changeObject(value);
-console.log("After calling Function")
-console.log(value);
+// console.log("Before Calling function");
+// var value={
+//     x:7
+// }
+// changeObject(value);
+// console.log("After calling Function")
+// console.log(value);
+
+
+//function constructos
+
+function Circle(radius){    //useing capitals for others to knoiw that it is a fucntion construction( generally);
+    // console.log(this);
+    this.radius= radius; //radius part of the fucntion argument
+
+};
+
+Circle.prototype.getArea= function(){
+    return( Math.PI * Math.pow(this.radius,2))
+    
+};
+
+var myCircle = new Circle(10);  //New object named circle   
+console.log(myCircle.getArea());
+
+
+var otherCircle = new Circle(200);
+console.log(otherCircle.getArea());
