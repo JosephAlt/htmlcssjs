@@ -278,20 +278,32 @@
 
 
 
-//making my own fucntoin constructor
+//making my own fucntoin constructor  //test1
 
-function Cuboid(length,breadth,height){
-    // console.log(this);
-    this.length=length;
-    this.breadth=breadth;
-    this.height=height;
+// function Cuboid(length,breadth,height){
+//     // console.log(this);
+//     this.length=length;
+//     this.breadth=breadth;
+//     this.height=height;
 
-    console.log(this.volume())
-};
-Cuboid.prototype.volume = function(){
-    return  this.length*this.breadth*this.height + " Cm^3"
-};
+//     console.log(this.volume())
+// };
+// Cuboid.prototype.volume = function(){
+//     return  this.length*this.breadth*this.height + " Cm^3"
+// };
 
-cuboid1 =  new Cuboid(100,100,100);
+// cuboid1 =  new Cuboid(100,100,100);
 
-cuboid2 =  new Cuboid(10900,100,100);
+// cuboid2 =  new Cuboid(10900,100,100);
+
+
+
+//test 2 fucntions constructior
+//to find whether a number is prime or not
+
+function Number(integer){
+    this.integer=integer;
+}
+Number.prototype.isprime =  function(){
+    
+}
