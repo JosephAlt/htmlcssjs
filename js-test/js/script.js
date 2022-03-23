@@ -162,7 +162,7 @@
 // console.log(company);
 // console.log(company["stock price"]);
 
-//better way to create objects
+// better way to create objects
 
 // var facebook={
 //     name:"Facebook",
@@ -175,7 +175,7 @@
 // console.log(facebook);
 // console.log(facebook["stock of company"]);
 
-//FUNCTIONS
+// FUNCTIONS
 
 // function multiply(x,y){
 //     return x*y;
@@ -219,7 +219,7 @@
 // console.log(bobj.a);
 
 
-//passing by reference and value in fucntions
+// passing by reference and value in fucntions
 
 // function changePrimitive(primval){
 //     console.log("change in primitive|||||");
@@ -256,7 +256,7 @@
 // console.log(value);
 
 
-//function constructos
+// function constructos
 
 // function Circle(radius){    //useing capitals for others to knoiw that it is a fucntion construction( generally);
 //     // console.log(this);
@@ -278,7 +278,7 @@
 
 
 
-//making my own fucntoin constructor  //test1
+// making my own fucntoin constructor  //test1
 
 // function Cuboid(length,breadth,height){
 //     // console.log(this);
@@ -298,8 +298,8 @@
 
 
 
-//test 2 fucntions constructior
-//to find whether a number is prime or not
+// test 2 fucntions constructior
+// to find whether a number is prime or not
 
 // function Number(integer){
 //     this.integer=integer;
@@ -333,7 +333,7 @@
 // isitprime = new Number(100151);
 
 
-//obhject literal and this kw
+// obhject literal and this kw
 
 // var literalCircle = {
 //     radius:10,
