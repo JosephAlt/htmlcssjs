@@ -301,14 +301,64 @@
 //test 2 fucntions constructior
 //to find whether a number is prime or not
 
-function Number(integer){
-    this.integer=integer;
-    console.log(this.isprime());
-}
-Number.prototype.isprime =  function(){
-    n=this.integer;
-    for (t=0;t<n;t++){
+// function Number(integer){
+//     this.integer=integer;
+//     console.log(integer + " " +this.isPrime());
+// }
+// Number.prototype.isPrime =  function(){
+//     var n=this.integer;
+//     var returnedVal="Is Not Prime";
+//     var primeNumber=0;
+//     var t=1;
+//     for (t;t<n;t++){
+//         if ((t != 1)&&(n%t==0)){
+//             primeNumber+=1;
+
+//         }
+//         else{
+//             primeNumber=primeNumber;
+//         }
+        
+//     }
+//     if(primeNumber==0){
+//         returnedVal="Is Prime";
+//         return returnedVal;
+//     }
+//     else{
+//         returnedVal="Is Not Prime";
+//         return returnedVal;
+//     }
+// }
+
+// isitprime = new Number(100151);
 
 
-    }
-}
+//obhject literal and this kw
+
+// var literalCircle = {
+//     radius:10,
+
+//     getArea:function(){
+//         console.log(this);
+//         return Math.PI * Math.pow(this.radius,2)
+//     }
+// }
+
+// console.log(literalCircle.getArea())
+
+// var cubeVolume = {
+//     length:10,
+//     breadth:10,
+//     height:10,
+
+//     getVolume: function(){
+//         return this.length * this.height * this.breadth
+//     },
+//     giveVolume : function(){
+//         console.log(this.getVolume())
+//     },
+
+// }
+
+// cubeVolume.giveVolume();
+
