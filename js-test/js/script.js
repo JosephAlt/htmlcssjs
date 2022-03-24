@@ -362,18 +362,20 @@
 
 // cubeVolume.giveVolume();
 
-function ConstructionConstructor(argument1,argument2,argument3,argument4,argument5,argument6){
-    var arg1 = argument1;
-    var arg2 = argument2;
-    var arg3 = argument3;
-    var arg4 = argument4;
-    var arg5 = argument5;
-    var arg6 = argument6;
+// function ConstructionConstructor(argument1,argument2,argument3,argument4,argument5,argument6){
+//     var arg1 = argument1;
+//     var arg2 = argument2;
+//     var arg3 = argument3;
+//     var arg4 = argument4;
+//     var arg5 = argument5;
+//     var arg6 = argument6;
 
 
-    //argument1 - type of argument (string)
-    //argument2 - title
-    //argument3 - content
-};
+//     //argument1 - type of argument (string)
+//     //argument2 - title
+//     //argument3 - content
+// };
+
+
 
 
