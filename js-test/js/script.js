@@ -393,8 +393,26 @@
 // array = [1,"second is a string",{also:'then an object'}];
 // console.log(array.length);
 
-var names = ["Jack","Jill"];
-console.log(names.length)
-for (var i=0;i<names.length;i++){
-    console.log(names[i]+" went up the hill.")
-}
+// var names = ["Jack","Jill"];
+// console.log(names.length)
+// for (var i=0;i<names.length;i++){
+//     console.log(names[i]+" went up the hill.")
+// }
+
+// names.objProperty = "test string";
+
+
+// for(i in names){
+//     console.log(i +" : "+ names[i])
+// }
+
+
+// var object1 = {
+//     one:1,
+//     two:2,
+//     three:3,
+// }
+// for(i in object1){
+//     console.log(i + object1[i])
+// }
+
