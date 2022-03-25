@@ -362,3 +362,39 @@
 
 // cubeVolume.giveVolume();
 
+
+
+//sample
+// var literalCircle = {
+//     radius : 10 ,
+    
+//     getArea:function (){
+//         var self = this;
+//         console.log(this)
+//         return Math.PI*Math.pow(self.radius,2)}
+// }
+
+// console.log(literalCircle.getArea());
+
+// var array = new Array();
+// array[0]="this is a string";
+// array[1]=1;
+// array[2]={name:"object",place:"inside array",animal:0,thing:{object:"another object"}};
+// array[3]= function(argument){
+//     console.log("I was told to put '"+argument+"' inside the console.");
+// }
+// array[3]("nothing");
+// array[3]();
+// array[3](array[0]);
+// array[3](array[2].place);
+
+
+//shorthand method for creating arrays
+// array = [1,"second is a string",{also:'then an object'}];
+// console.log(array.length);
+
+var names = ["Jack","Jill"];
+console.log(names.length)
+for (var i=0;i<names.length;i++){
+    console.log(names[i]+" went up the hill.")
+}
