@@ -416,3 +416,8 @@
 //     console.log(i + object1[i])
 // }
 
+
+
+window.onload = function() {
+    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+}
