@@ -428,3 +428,12 @@ function makeMultiplier(multiplier) {
 // console.log(doubleAll(10));
 
 // console.log(makeMultiplier(2)(9))
+
+// this is part of 3 files script2.js and script3.js
+
+var name1={
+    name:"Joseph",
+    greeter: function(){
+        console.log("Ayo, " + name1.name)
+    }
+}
