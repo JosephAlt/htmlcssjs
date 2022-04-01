@@ -416,8 +416,15 @@
 //     console.log(i + object1[i])
 // }
 
+function makeMultiplier(multiplier) {
+    return(
+        function(x){
+           return multiplier * x;
+        }
+    );
+};
 
+// var doubleAll =makeMultiplier(2);
+// console.log(doubleAll(10));
 
-window.onload = function() {
-    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-}
+// console.log(makeMultiplier(2)(9))
