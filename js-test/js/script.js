@@ -448,4 +448,4 @@ var trialfunc = (function (a){
     console.log("while "+ lmao)
 })(window);
 
-console.log("after "+ lmao)
+console.log("after "+ lmao);
