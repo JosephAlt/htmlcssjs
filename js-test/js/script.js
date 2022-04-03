@@ -429,11 +429,23 @@
 
 // console.log(makeMultiplier(2)(9))
 
-// this is part of 3 files script2.js and script3.js
 
-var name1={
-    name:"Joseph",
-    greeter: function(){
-        console.log("Ayo, " + name1.name)
-    }
-}
+
+// this is part of 3 files script2.js and script3.js
+// var name1={
+//     name:"Joseph",
+//     greeter: function(){
+//         console.log("Ayo, " + name1.name)
+//     }
+// }
+
+
+//immidietly invoked function expression
+var lmao = "lmao";
+console.log("before "+ lmao)
+var trialfunc = (function (a){
+    a.lmao="what";
+    console.log("while "+ lmao)
+})(window);
+
+console.log("after "+ lmao)
